@@ -243,13 +243,19 @@ h1 a{
     padding: 18px;
 }
 
+.setCenter{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.footerSet{
+    width: 780px;
+}
+
 .footerEmail{
     display: flex;
     align-items: center;
-    padding: 30px 122px;
-    max-width: 992px;
-    margin: 0 auto;
-
 }
 
 .footerEmail img{
@@ -260,6 +266,38 @@ h1 a{
 
 .footerEmail p{
     font-size: 24px;
+}
+
+.emailInput{
+    background-color: #EAF0ED;
+    display: flex;
+    align-items: center;
+    width: 48%;
+}
+
+.emailInput img{
+    width: 24px;
+    height: 24px;
+    margin: 16px 20px;
+}
+
+.emailInput input[type="text"]{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 16px;
+    background-color: #EAF0ED;
+}
+
+.emailInput button{
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: block;
+    width: 64px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+    background: center center no-repeat #FFE180 url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
 }
 
 .footerbg{
@@ -348,6 +386,10 @@ h1 a{
     }
     .page_change{
         margin-bottom: 30px;
+        justify-content: center;
+    }
+    .footerSet{
+        padding: 0 30px;
     }
 }
 
@@ -376,13 +418,19 @@ h1 a{
     .items{
         width: 100%;
     }
-    .page_change{
-        justify-content: center;
+    .footerSet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
     .footerEmail{
-        padding: 30px 0 30px 0;
         justify-content: center;
         width: auto;
+        margin-bottom: 30px;
+    }
+    .emailInput{
+        width: 84%;
     }
     .footerContact{
         flex-direction: column;
